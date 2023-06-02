@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+<!-- Testimonial Start -->
+{% block title %}
+English Summarization
+{% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Left Half - Provided Code -->
+        <div class="col-md-6">
+            <div class="container">
+                <form method="post" action="/english/summary/file" enctype="multipart/form-data" id="inputForm">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Select input type:</label>
+                        </div>
+                        <select id="selection" onchange="handleSelectionChange()" class="custom-select">
+                            <option value="textarea">Text Area</option>
+                            <option value="file" selected>Upload File</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-file">Select File:</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="input-file" name="file">
+                            <label class="custom-file-label" for="input-file">Choose file</label>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+                <br>
+                {% if result %}
+                <div class="result">
+                    <h2>Result:</h2>
+                    <pre>{{ result }}</pre>
+                </div>
+                {% endif %}
+            </div>
+
+        </div>
+
+        <!-- Right Half - Chat Form -->
+        <div class="col-md-6 bg-light">
+            <h1>Chat PDF</h1>
+
+            <div class="position-relative">
+                <div class="chat-messages overflow-auto" style="max-height: 550px;">
+
+                    {% for sender, message in messages %}
+                    <div class="row">
+                        {% if loop.index % 2 == 1 %}
+                        <div class="col-md-1 order-md-1">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle"
+                                alt="Avatar Image" width="40" height="40">
+                        </div>
+                        <div class="col-md-8 order-md-2 flex-shrink-1 bg-primary rounded py-2 px-3 mr-3 text-white">
+                            <div class="chat font-weight-bold mb-1 rounded-circle">
+                                <p>{{ message }}</p>
+                            </div>
+                        </div>
+                        {% else %}
+                        <div
+                            class="col-md-8 order-md-1 flex-shrink-1 bg-primary rounded py-2 px-3 mr-3 text-white text-right">
+                            <div class="chat font-weight-bold mb-1 rounded-circle">
+                                <p>{{ message }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1 order-md-2">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle"
+                                alt="Avatar Image" width="40" height="40">
+                        </div>
+                        {% endif %}
+                    </div>
+                    <br>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+
+            <div class="flex-grow-0 py-3 border-top">
+                <form action="/english/chat/file" method="post">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="message" placeholder="Type your message">
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+</div>
+{% block script %}
+
+<script>
+    function handleSelectionChange() {
+        var selection = document.getElementById("selection");
+        var form = document.getElementById("inputForm");
+
+        form.action = "/english/input/textarea";
+        form.enctype = "";
+        form.method = 'get';
+        form.submit();
+    }
+</script>
+{% endblock %}

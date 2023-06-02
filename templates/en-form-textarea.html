@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+<!-- Testimonial Start -->
+{% block title %}
+English Summarization
+{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div class="container">
+        <h2 class="card-title text-center">English Text Input</h2>
+        <form id="inputForm" method="post" action="/english/summary/textarea">
+            <!-- <div class="input-selection">
+                <label for="selection">Select input type:</label>
+                <select id="selection" onchange="handleSelectionChange()">
+                    <option value="textarea" selected>Text Area</option>
+                    <option value="file">Upload File</option>
+                </select>
+            </div> -->
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Select input type:</label>
+                </div>
+                <select id="selection" onchange="handleSelectionChange()" class="custom-select">
+                    <option value="textarea" selected>Text Area</option>
+                    <option value="file">Upload File</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="input-text">Enter Text:</label>
+                <textarea class="form-control" id="input-text" name="input_text" rows="12"></textarea>
+            </div>
+
+            <br>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        {% if result %}
+        <div class="result">
+            <h2>Result:</h2>
+            <pre>{{ result }}</pre>
+            {% endif %}
+        </div>
+
+        {% endblock %}
+    </div>
+</div>
+{% block script %}
+
+<script>
+    function handleSelectionChange() {
+        var selection = document.getElementById("selection");
+        var form = document.getElementById("inputForm");
+
+        form.action = "/english/input/file";
+        form.enctype = "multipart/form-data";
+        form.method = 'get';
+        form.submit();
+    }
+
+</script>
+{% endblock %}
