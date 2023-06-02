@@ -27,7 +27,10 @@ templates = Jinja2Templates(directory="templates")
 
 
 messages = [
-    ("You", "I am your personal document assistant"),
+    (
+        "Bot",
+        "👋 Hello there! As your personal document assistant, I'm here to assist you with any document-related needs you may have. How can I help you today?",
+    ),
 ]
 
 filenames = []

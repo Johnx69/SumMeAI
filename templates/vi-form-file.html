@@ -10,7 +10,9 @@ Vietnamese Summarization
         <div class="col-lg-8 w-75">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="card-title text-center">Vietnamese File Input</h2>
+                    <h2 class="card-title text-center">
+                        <i class="fas fa-file-import"></i> Vietnamese File Input
+                    </h2>
                     <form method="post" action="/vietnamese/summary/file" enctype="multipart/form-data" id="inputForm">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -23,6 +25,9 @@ Vietnamese Summarization
                         </div>
 
                         <div class="form-group">
+                            <h5 style="text-align: center;">
+                                <i class="fas fa-info-circle"></i> Note: Only support file .txt and .pdf for now
+                            </h5>
                             <label for="input-file" class="font-weight-bold">Select File:</label>
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" id="input-file" name="file">
