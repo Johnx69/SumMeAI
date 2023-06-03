@@ -4,7 +4,11 @@
 English Summarization
 {% endblock %}
 {% block content %}
-
+<style>
+    body {
+        overflow: hidden;
+    }
+</style>
 <div class="container-fluid">
     <div class="row">
         <h1 class="mb-5">English Summarization and Chat PDF Interface</h1>
@@ -58,7 +62,7 @@ English Summarization
                 <h2 class="mb-5 text-center">
                     <i class="fas fa-comments"></i> Chat with your document
                 </h2>
-                <div class="chat-messages overflow-auto" style="max-height: 550px;">
+                <div class="chat-messages overflow-auto" style="max-height: 480px;">
 
                     {% for sender, message in messages %}
                     <div class="row">

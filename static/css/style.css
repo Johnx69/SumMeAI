@@ -17,6 +17,7 @@ h1 {
 
 body {
     margin-top: 0px;
+    overflow: hidden;
 }
 /*************** 1.Variables ***************/
 
@@ -400,5 +401,3 @@ ul {
     margin-bottom: 2rem;
     box-shadow: none;
 }
-
-
