@@ -24,7 +24,6 @@ SumMeAI is a powerful application designed to simplify the process of text summa
 <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" width="100" height="100"/> </a>
 <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="100" height="100"/> </a>
 <a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/fastapi.svg" alt="fastapi" width="100" height="100"/> </a>
-<a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"> <img src="
-https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-08/logo-hugging-face-rwd.png.rendition.intel.web.576.324.png" alt="fastapi" width="100" height="100"/> </a>
+<a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"> <img src="static/images/readme/Huggingface.png" alt="fastapi" width="100" height="100"/> </a>
 
 
