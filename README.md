@@ -21,7 +21,7 @@ SumMeAI is a powerful application designed to simplify the process of text summa
 
 <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML" width="100" height="100"/> </a>
 <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS" width="100" height="100"/> </a>
-<a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" width="100" height="100"/> </a>
+<a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" width="150" height="100"/> </a>
 <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="100" height="100"/> </a>
 <a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/fastapi.svg" alt="fastapi" width="100" height="100"/> </a>
 <a href="https://huggingface.co/" target="_blank" rel="noreferrer"> <img src="static/images/readme/Huggingface.png" alt="huggingface" width="150" height="100"/> </a>
