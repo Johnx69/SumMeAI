@@ -136,4 +136,3 @@ Contributions to SumMeAI are welcome! If you find any issues or have suggestions
 ## VII. License ⚖️
 
 SumMeAI is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this software as per the terms of this license.
-
